@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang= "en">
+   <head>
+     <title> Effects of Austerity </title>
+     <link rel= "stylesheet" href="style/style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans">
+     <link rel = "stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
+     <link rel = "stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei">
+     <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js" charset="utf-8"></script>
+  </head>
+<body>
+  <div id="parent">
+<!-- This is my header which can be viewed on a desktop and when width is greater than 600px.
+I referred to this page https://www.w3schools.com/howto/howto_css_responsive_header.asp -->
+    <div class="header">
+      <a class= "logo" href="austerityTimeline.html">Austerity Impact</a>
+      <div class="header-right">
+        <a>The impact of austerity spending on school-aged children</a>
+      </div>
+    </div>
+
+    <div class="tab">
+      <button onclick="openTab('landing')">Home</button>
+      <button onclick="openTab('history')">Background</button>
+      <button onclick="openTab('schools')">Teachers</button>
+      <button onclick="openTab('teachers')">Students</button>
+      <button onclick="openTab('parents')">Families</button>
+      <button onclick="openTab('localAuthority')">Local Authority</button>
+      <button onclick="openTab('data')">Data and Methodology</button>
+    </div>
+
+    <!-- Tab content -->
+
+    <div id="landingPage" class="landing">
+      <div class="topStories">
+
+            <div class="headline">
+              <picture class="headlinePics">
+                <source media="(min-width: 600px)" srcset="style/Cardiff2.jpg">
+              <img src="style/Cardiff2.jpg"
+                alt="The impact of austerity spending"
+                title="Cardiff City Hall"
+                width="100%">
+              </picture>
+              <div class="newsCaption">History of Austerity Spending</div>
+            </div>
+          <div class="headline">
+            <picture id="chartPic">
+              <source media="(min-width: 600px)" srcset="style/chart1.png">
+              <img src="style/chart1.png"
+                  alt="Charting how austerity spending cuts impact different areas"
+                  title="Austerity spending cuts impact many sectors in education"
+                  width="100%">
+            </picture>
+            <div class="newsCaption">Follow the impact</div>
+            </div>
+          <div class="headline">
+            <picture class="headlinePics">
+              <source media="(min-width: 600px)" srcset="style/teacher1.jpg">
+              <img src="style/teacher1.jpg"
+                  alt="Educators feel more pressure under austerity spending cuts"
+                  title="Educators impacted"
+                  width="100%">
+            </picture>
+            <div class="newsCaption">Educator impacts</div>
+            </div>
+          </div>
+
+          <div id="quote">
+            <p2>"The education system has been mopping up some of the problems that have been caused by other austerity cuts" - Mary O'Hara</p2>
+          </div>
+
+      <div class="row">
+       <div class="column">
+          <img class="dad"
+          src="style/dad1.jpg"
+          alt="Parents discuss impact of austerity"
+          title="Parents"
+          width="100%"/>
+          <div class="caption">Parents Discuss Impact</div>
+        </div>
+        <div class="column">
+          <iframe width="100%"
+          height="520"
+          frameborder="0"
+          src="https://lucasmarches.carto.com/builder/6235feca-0949-4baf-8bba-3e3e6479937d/embed"
+          allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+          <div class="caption">Regions impacted by austerity spending</div>
+      </div>
+    </div>
+
+    </div>
+
+
+  <div class= "pageDetails">
+  <div id="landing" class="details">
+    <div class="topStories">
+
+          <div class="headline">
+            <picture class="headlinePics">
+              <source media="(min-width: 600px)" srcset="style/Cardiff2.jpg">
+            <img class="homePics" src="style/Cardiff2.jpg"
+              alt="The impact of austerity spending"
+              title="Cardiff City Hall"
+              width="100%">
+            </picture>
+            <div class="newsCaption">History of Austerity Spending</div>
+          </div>
+        <div class="headline">
+          <picture class="headlinePics">
+            <source media="(min-width: 600px)" srcset="style/chart1.png">
+            <img class="homePics"
+                src="style/chart1.png"
+                alt="Charting how austerity spending cuts impact different areas"
+                title="Austerity spending cuts impact many sectors in education"
+                width="100%">
+          </picture>
+          <div class="newsCaption">Follow the impact</div>
+          </div>
+        <div class="headline">
+          <picture class="headlinePics">
+            <source media="(min-width: 600px)" srcset="style/teacher1.jpg">
+            <img class="homePics"
+                src="style/teacher1.jpg"
+                alt="Educators feel more pressure under austerity spending cuts"
+                title="Educators impacted"
+                width="100%">
+          </picture>
+          <div class="newsCaption">Educator impacts</div>
+          </div>
+        </div>
+
+        <div id="quote">
+          <p2>"The education system has been mopping up some of the problems that have been caused by other austerity cuts" - Mary O'Hara</p2>
+        </div>
+
+    <div class="row">
+     <div class="column">
+        <img class="dad"
+        src="style/dad1.jpg"
+        alt="Parents discuss impact of austerity"
+        title="Parents"
+        width="100%"/>
+        <div class="caption">Parents Discuss Impact</div>
+      </div>
+      <div class="column">
+        <iframe width="100%"
+        height="480"
+        frameborder="0"
+        src="https://lucasmarches.carto.com/builder/6235feca-0949-4baf-8bba-3e3e6479937d/embed"
+        allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+        <div class="caption">Regions impacted by austerity spending</div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+  <div class="pageDetails">
+    <div id="teachers" class="details">
+      <div class="writing1">
+        <h>Breaking point: student mental health "in crisis"</h>
+        <hr>
+        <h9>Ali Ingersoll, Lucas Marchesini and Leia Reid<h9>
+        <hr>
+        <p>The number of students struggling with mental health has risen and the National Education Union (NEU) says austerity is to blame. “Members have conveyed tragedies that could be prevented by proper government funding," the union wrote in a press release.</p>
+        <p>“The chronic underfunding of schools and external mental health services is only making matters worse,” the union’s statement continues. The issue of mental health was one of the main topics discussed at the Union’s conference held in Liverpool earlier this year.</p>
+        <p>“The current draconian approach to the education of children and young people is turning our schools into Exam Factories and squeezing the joy and creativity out of the classroom,” said Kevin Courtney, the Joint General Security for the NEU, in a speech he made during the conference.</p>
+        <p>According to a survey titled ‘The State of Education’, which was released during the conference, 83% of the 8000 educators who responded report an increase in mental health issues during the last year.</p>
+        <img class="sallyPower" src="style/teacher1.jpg"/>
+        <p>When asked what prevented teachers from helping students with problems, “there was significant blame apportioned to real-terms funding cuts (57%) in this multi-choice answer, along with a reduction in teaching assistants (51%) and learning support assistants (40%),” points out the NEU in a press release.</p>
+        <p>The survey interviewed 8,674 members in England, Wales, Scotland and Northern Ireland between 28 March and 3 April 2019. More than half of those who answered (53%) of respondents are classroom teachers and 26% are in head of department or leadership roles.</p>
+        <p>A spokesperson for the Department for Education (DfE), said by email and published in a press release that children’s mental health is a “key priority” and the new compulsory health education curriculum will ensure children are taught “how to look after their mental wellbeing and recognise when classmates are struggling.”</p>
+        <p>The DfE is reportedly investing more money into mental health support and says, by the 2023-2024 school year, they’ll be spending an additional £2.3bn annually.</p>
+        <p>Professor Sally Power, co-director of Wales Institute of Social and Economics Data and Method (WISERD) and a governor of two schools, agrees that mental health is a huge issue in the educational system.</p>
+        <p>The education researcher feels this puts extra pressure on schools in a moment when budgets are being squeezed. Power says, around a decade or two ago, teachers weren’t required to act as mental health counselors in addition to juggling their daily tasks. “There weren’t the expectations that schools would be dealing with students mental health issues at the level that they’re expected to now,” she explains.</p>
+        <p>“Teachers are having to pick up slack on things they haven’t been qualified for so they’re deeply stressed themselves about this,” said Mary O’Hara, the author of ‘Austerity Bites.’</p>
+        <p>O’Hara says the issues many students face now are a fallout from austerity cuts to other welfare programs and she feels, those issues are perpetuated farther by requesting teachers fill the gap left by the deficit.</p>
+        <p>“If you are a teacher, you want to be able to respond to your pupils needs and in the best way possible but you also know that this is an area that requires professional intervention and early intervention and a lot of the things that were cut by austerity were early intervention bits,” she adds.</p>
+      </div>
+      <div class="writing1">
+        <h>From north to south and nine years time – a reflection on the differences in school resources</h>
+        <hr>
+        <h9>Ali Ingersoll</h9>
+        <hr>
+        <p>Zippers zip, notebook covers slap shut, and trainers shuffle out of the classroom as postgraduate students leave for the day. Among them is Laura Ellen Edwards. The 26-year-old attending Cardiff University is from Conwy.</p>
+        <p>She describes her town as “better off than most” in North Wales.</p>
+        <p>“I am from there, I love it there,” said Edwards, who, loves it so much, she aims to return home to visit her family at least twice each month.</p>
+        <p>The postgrad student attended Bangor University then moved to Cardiff to receive her postgraduate certificate in education. She says, while she loves North Wales, she feels opportunities are limited there and she had to move to launch her career.</p>
+        <p>“Young people are leaving North Wales and they’re leaving Wales, in general. But I’m lucky I even had this opportunity,” said Edwards while she reflected on her education in Conwy.</p>
+        <p>She refers to Cardiff as a “utopia” and believes the city gives outsiders a “false sense of what Wales is like.” She says the deprivation around the country, especially in areas like the valleys and North Wales, is far greater than what’s seen in the capital city.</p>
+        <p>According to data from the Stats Wales, Cardiff schools are receiving £1.966 million less now in real terms than they were prior to austerity. Meanwhile, Conwy schools difference is more than £6.5 million less in real terms.</p>
+        <p>“It’s mad. When you actually start thinking about it, it’s terrifying.”</p>
+        <p>Edwards believes she has been set up better than most students though. While receiving her PGCE, Edwards did her training at Merthyr Tydfil Coleg, a school in a region receiving around £4.3 million less in funding now than prior to austerity, per StatsWales.</p>
+        <p>“They grew up under these cuts,” said Edwards when asked why she thinks, despite the data showing the North Wales community being impacted more, she thought the Brecon Beacons region school was hit harder. She feels consistently slashing funds has led schools to have to make do with what they have. During her teaching year, Edwards taught creative media in Merthyr Tydfil and says the equipment students were required to learn on was outdated. According to Edwards, students were still burning videos onto DVDs and didn’t have the capability to upload to sites, like YouTube. She says the rooms were too small to accommodate all the teens enrolled and there were only two computers for the 25 students.</p>
+        <p>“It hits hard across the board,” said Edwards. “In Conwy, it wasn’t this bad. It’s making me think now. Wow, it really has changed. I don’t like to think about it but it has changed. Younger people don’t have what I had. I am very lucky.”</p>
+      </div>
+    </div>
+  </div>
+
+  <div class= "pageDetails">
+    <div id="history" class="details">
+      <div class="writing1">
+        <h>Welfare spending cuts ‘rips hearts out of community’, says author</h>
+        <hr>
+        <h9>Ali Ingersoll and Lucas Marchesini</h9>
+        <hr>
+        <p>School children in navy sweaters file out of a building in South Wales, meeting their parents on the pavement where they start to excitedly discuss what they learned that day.</p>
+        <p>Students in this school and millions of others around the United Kingdom are growing up under the age of austerity.</p>
+        <p>The U.K. government has operated under a constricted budget since 2010 after George Osborne, the former chancellor of the Exchequer, introduced more than £40bn package filled with tax increases, welfare cuts, and Whitehall spending restraint aimed at supplementing the government’s budget deficit.</p>
+        <p>“It pays for the past. And it plans for the future,” said Osborne during his 2010 budget statement he delivered to the House of Commons. “It supports a strong enterprise-led recovery. It rewards work. And it protects the most vulnerable in our society.”</p>
+        <p>While the U.K. economy has grown for nine consecutive years under austerity spending, those who are living under it says it comes at a cost – and it’s the very people Osborne said it would protect.</p>
+        <p>“It’s vulnerable people and marginalized people that mostly get hurt,” said Mary O’Hara, the author of ‘Austerity Bites.’  “They’re always the people who mostly get hurt and for some reason we find that acceptable as a society.”</p>
+        <p>The government has reduced funding to several social welfare programs over the last nine years as schools have seen the number of students who qualify for school lunches increase during that same time frame.</p>
+        <p>The cuts to education have been indirect. During this age of austerity, each school has less per pupil - in England, on average, spending has decreased by £474.14 and in Wales, the spending on each student is down by £602.</p>
+        <img class="guto" src="style/guto.jpg" width="480" alt="Guto Ifan, researcher, says austerity spending was a choice" title="Researcher at Wales Governance Centre"/>
+        <p>“It was made out to be sort of a necessity but in actual fact, it was a choice to cut spending as quickly as they did,” said Guto Ifan, a Wales Governance Centre research assistant who analyzes austerity’s impact on local funding.</p>
+        <p>While the Department for Education and National Health Services have not had their funding directly cut, other programs experiencing deficiencies partnered with a growing population, have led to a decrease in funding per pupil.</p>
+        <p>When questioned about the issue, the Department for Education did not answer questions about the decrease on the spending on students but recognized “the budgeting challenges schools face”.</p>
+        <p>“That is why the Education Secretary has set out his determination to work with the sector to help schools ensure that every pound is spent as effectively as possible to give children a great education”, a spokesperson told us.</p>
+        <p>“The education system has been mopping up some of the problems that have been caused by other austerity cuts,” said O’Hara.</p>
+        <p>While the author and journalist believes there will be long-term effects from austerity spending, O’Hara feels families around the United Kingdom have been dealing with the fallout from cuts since austerity’s onset.</p>
+        <p>“[Social welfare program spending cuts] has a domino effect on the pressures those families feel, on their capacity to deal with certain things. That doesn’t go away. It has to go somewhere, and it ends up at the schools.”</p>
+        <p>O’Hara says educators are now picking up the pieces, working as mental health counselors and schools have become the only source of a sense of community for many children. Some of the examples she points to which have impacted children and families include closing playgrounds and community pools, shutting down libraries, and reducing funding for carers. O’Hara says the evidence of damage to communities from reducing funding is overwhelming and, she believes, too significant to change.</p>
+        <p>“They have ripped a huge hole in the social fabric of society, in the local government, in the benefit system. They have ripped the heart of communities by cutting services.”</p>
+      </div>
+      <div class=writing1>
+      <h>Breaking down the Barnett Formula</h>
+      <hr>
+      <h9>Lucas Marchesini and Leia Reed</h9>
+      <hr>
+      <p>Funding for education in the UK follows something called the Barnett Formula. It states that any increase or reduction in expenditure in England will automatically lead to a proportionate increase or reduction in expenditure in Northern Ireland, Scotland and Wales.</p>
+      <p>This happens because education is devolved, which means that the allocation of the budget is done by the local governments and not by the central UK administration.</p>
+      <p>The formula allows each devolved administration to allocate funds as wants.</p>
+      <p>The formula’s name comes from Joel Barnett, the former Chief Secretary to the treasury who created it 1978. Although it has been around for decades, its efficiency is highly disputed. Barnett himself said in an interview to the Telegraph in 2014 that the formula is a “terrible mistake” and that he is ashamed of having his name on it.</p>
+    </div>
+  </div>
+
+      <div id="parents" class="details">
+        <div class="writing1">
+          <h>Families making up for austerity's shortfall</h>
+          <hr>
+          <h9>Lucas Marchesini and Ali Ingersoll</h9>
+          <hr>
+            <img class="dadPic" src="style/dad1.jpg" width="480" alt="Dad of triplets waits outside of school" title="Dad of three waits for children outside of a school"/>
+            <p>Ben Pryer sits outside a school in Roath, waiting for his children to be dismissed for the day. The father of triplets lives in Cardiff. Two of his children attend the same primary school while the third attends a special school for kids with autism.</p>
+            <p>This particular situation allows him to directly see the impact of austerity.</p>
+            <p>“A lot of schools are not able anymore to offer additional help to kids with special needs”, he says while waiting for his two daughters finish their school day.</p>
+            <p>Pryer says his family can afford spending more money so his child who needs additional support can receive it. Education researchers say, in the wake of austerity, they’re seeing more families front extra money for their children’s education.</p>
+            <p>“One of the principle reasons of social immobility is that middle class parents are particularly affected by protecting their children from downward mobility so they are very good at putting into place safety mechanisms or extra resources to ensure that even a child who is not particularly academically abled, they won’t end up in a really dead end job,” says Professor Sally Power, the co-director of Wales Institute of Social and Economics Data and Method (WISERD).</p>
+            <p>That isn’t the case for every family in every community, though. Power’s research into this finds financially stable parents are privately subsidizing fieldtrips, tutoring, and books.</p>
+            <p>“The minute you begin to increase the amount of private or parental donations into a system, you increase inequalities,” said Power.</p>
+            <p>Additionally, over the last nine years, there have reportedly been more businesses engagements in schools which are near prosperous companies or enroll children whose parents are influential members of the community.</p>
+            <p>Power says the increase in outside monetary sources leads to further inequalities for children from marginalized communities.</p>
+            <p>“That’s going to increase inequalities across the system,” said the education researcher. “The schools with affluent parents will be able to put in more resources than the schools in the poorest areas.”</p>
+            <p>Parents, even those who can make personal contributions, make note of those disparities. Pryer says funding is coming from several outlets, including directly from teachers.</p>
+            <p>A survey released last year by the National Education Union interviewed 900 of its members to find out if parents have been asked for money to help with school funding. One third of them said that it happened in their school.</p>
+            <p>According to the survey, schools are seeking parental financial support for necessary items, like textbooks which the institutions can no longer afford to offer to students anymore.</p>
+            <p>“Schools need more resources. In many occasion teachers spend their own money for things”, Pryer adds.</p>
+            <p>While parents are willing to make up for the shortfall, they worry about the impact of the cuts.</p>
+            <p>“Parents are aware of cuts, but the school is pretty good at covering it", says Nicola Davies, who has two kids, ages 11 and 12, at the same school as Pryer’s.</p>
+            <p>And as the cuts piles up from budget to budget, she thinks that the situation might get worse.</p>
+            <p>"There will soon not be enough protection for teachers", she pointed out.</p>
+        </div>
+      </div>
+    </div>
+
+        <div id="localAuthority" class="details">
+          <div class=writing1>
+            <h>Austerity in Local Authorities</h>
+            <hr>
+            <h9>Lucas Marchesini</h9>
+            <hr>
+            <p>Austerity does not have the same impact everywhere. Do you want to know how the impact of cuts in schol budgets affected a particular area? Check it out here.</p>
+          </div>
+
+
+          <div class=lucas2>
+            <iframe width="100%" height="520" frameborder="0" src="https://lucasmarches.carto.com/builder/6235feca-0949-4baf-8bba-3e3e6479937d/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+          </div>
+
+          <div class = "writing1">
+            <h>School funding discrepancies shine spotlight on U.K.'s social mobility issues</h>
+            <hr>
+            <h9>Ali Ingersoll</h9>
+            <hr>
+            <p>Laura Ellen Edwards spends hours in the Cardiff University library, writing essays, researching the media. The 26-year-old is a postgraduate student getting her masters degree in digital media and society.</p>
+            <p>Edwards, from Conwy, grew up in what she describes as a modest home. Her parents met at Sheffield where they received high end national diplomas in business and finance.</p>
+            <p>“We’re very lucky, compared to most in north Wales,” said Edwards during an interview.</p>
+            <p>Edwards says she often talks about her upbringing but only recently started reflecting on the opportunities she has had. In 2016, she moved to Cardiff from the Snowdonia-area village to be with her partner. She says, financially, she was only able to move because her partner’s family is based in the capital so she had a place to live and didn’t have to save money for an initial deposit on a flat. She says, when she moved to south Wales, she saw all the opportunities here – opportunities she says she and others in the north aren’t afforded.</p>
+            <p>The Cardiff University postgraduate student feels education is a priority for many young people all over the country but feels, some students in areas which have been defunded, might not realize their potential or the opportunities available to them.</p>
+            <p>“I think it’s a down fall of the U.K.,” said Edwards. “London takes all the money and sometimes politicians don’t concentrate anywhere else but London.”</p>
+            <p>London-based schools makes up 12% of the schools in England and receive 15% of funding, a rate which isn’t noticeably disproportionate. However, education research expert, Professor Sally Power from Cardiff University, found upper and middle-class families are more willing to make up for the short-fallings in their children’s schools and they’ll donate to the school, which she says disenfranchises students who are from disadvantaged families.</p>
+            <p>Edwards, a future teacher, feels, overall, students in school now have more opportunities but worries the concentration of funding and wealth in urban areas decreases social mobility and marginalizes people born into working-class and poverty-stricken families. She believes she and other millennials are in better positions than their parents but feels uncertain about the kids who are growing up now.</p>
+            <p>“Our generation is 100% better set up,” says Edwards. “There are more opportunities, more choices of courses for people to get into that they’re interested in. But if they’ll be able to get a job with that certification, I don’t know. We could have more opportunities but if the jobs aren’t there, they can’t get a job.”</p>
+            <p>This reality came to light again recently when Edwards’ brother, who has a law degree, settled for a job as Tesco truck driver.</p>
+            <p>“Even if he wanted to be a lawyer right now, he couldn’t because there aren’t law firms in our town,” said Edwards.</p>
+            <p>Edwards says her dad, whose certification is equivalent to a level-5 schooling completion, makes more than £50,000 annually, a figure she says she cannot imagine making. On top of not being able to achieve that sort of financial stability, the postgraduate student is paying off debt connected to money she had to borrow for her postgraduate teaching certificate and master’s degree. She is hopeful she’ll be able to pay off the money she borrowed in the next 15 years. She says, even if that limits how much money she can save and spend, she feels it was necessary to take out the money for her education and future.</p>
+            <p>“The most terrifying thing is- imagine if you didn't have the qualification,” said Edwards. “What is the hope for the people who can't afford the education? If you didn't have that, the loans, the ability to get degrees - where would you be?”</p>
+            <p>While Edwards doesn’t have that answer, experts in the field believe that’s the issue the country is facing right now. According to the House of Lords Social Mobility committee’s annual report, 80% of those who are born in well-off backgrounds are more likely to wind up in a professional setting than those who are not born into similar advantages. The committee reports the mobility prospects have sat stagnant for the last four years.</p>
+            <p>“Austerity doesn’t help with social mobility but [there are] complex reasons for [social mobility] and especially over the last 40 years,” said Mary O’Hara, a journalist and author of ‘Austerity Bites.’ “Austerity might have a role in that but there are much wider cultural and economic factors in play there.”</p>
+            <p>Edwards, who did not grow up in the age of austerity, says, while appreciative of her upbringing and the lifestyle her parents have worked to afford her, she feels slightly guilty those opportunities are not available to all.</p>
+            <p>“I’m very lucky,” she said, looking down the hallway, as if she’s simultaneously looking at her past and future. “I know I’m lucky.”</p>
+          </div>
+
+          <div class=lucas1>
+            <iframe width="80%" height="520" frameborder="0" src="divergingbar.html" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+          </div>
+
+          <div class=lucas1>
+            <iframe width="80%" height="720" frameborder="0" src="lineGraph.html" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+          </div>
+
+
+      </div>
+
+        <div id="schools" class="details">
+          <div class=writing1>
+            <h>Austerity spending cuts impacting all in the classroom</h>
+            <hr>
+            <h9>Lucas Marchesini</h9>
+            <hr>
+            <p>Catalina Silva relaxes on a Sunday evening before she’ll head back to work at a school as a replacement teacher in Cardiff. There, she has seen firsthand the impact of diminishing budgets for schools. “Teachers have a limit of 300 photocopies per year. This is nothing in a class with 30 students,” she said.</p>
+            <p>“Because of that, the kids spend a lot of time copying something instead of doing exercises and learning”, she adds. Silva feels this harms the quality of education. “Time is the biggest issue. Because of things like that, they do not have enough time for other activities required in the curriculum.”</p>
+            <img class="cataPic" src="style/cata.jpg" alt="Teachers experiencing funding shortage in classroom" title="Teachers experiencing funding shortage in classroom"/>
+            <p>The decreased financial support has increased pressure on teachers and Silva says, it’s leading to educators having to band together to fundraise for classroom materials. As she explains, each teacher has a quota for the year and when it is reached, somebody must chip in to fill the gap. To avoid disruption in the classroom, teachers end up doing it.</p>
+            <p>What Silva has witnessed is far from the exception. A survey from the National Education Union (NEU) released last year revealed that more than three quarters of interviewed teachers saw cuts in classroom material in 2017.</p>
+            <p>The most recent spending analysis for Welsh and English schools comes from the 2017-2018 school year and reveals, since the beginning of austerity, the majority of schools in Wales - 1299 of the 1451 - have decreased their budgetary allocations per pupil. Additionally, 73% of schools in England have also reduced spending per pupil.</p>
+            <p>The spending information for England is more in depth, with categories breaking down how the funding has changed for teachers, allowing us to evaluate the discrepancies throughout austerity. More than 10,000 schools provided this information to the Department for Education (DfE). Our reporting reveals, on average, staff funding has decreased by more than 20% since the inception of austerity. In 2017-2018, spending for English teaching staff sat at £2,597.02 per pupil, which is £587.76 per pupil less than it was during 2009-2010.</p>
+            <p>All 13,336 English schools released financial information for spending on supply teachers, like Silva. The average amount spent per student in 2017-2018 is £142.75, which is £37.68 less than they spent prior to austerity.</p>
+            <p>Silva believes parents who are financially able should pitch in with purchasing necessary school materials as she believes having more time to spend focusing on the curriculum will only benefit the children she’s tasked with teaching.</p>
+          </div>
+          <div class= "writing1">
+            <h>Prospective teachers fearful about the future of education</h>
+            <hr>
+            <h9>Ali Ingersoll</h9>
+            <hr>
+            <p>The sun reflects off the sides of the glass building in downtown Cardiff during an unseasonably warm April afternoon in Wales. Laura Ellen Edwards sits on her laptop, endlessly searching for teaching jobs. The postgraduate student is fearful about her future.</p>
+            <p>“Every public service is hammered down,” said Edwards. “Education gets an absolute hammering.”</p>
+            <p>She’s been in this position before though, when she failed her A-levels.</p>
+            <p>“I had a rough time as a student and I didn’t want to be in school anymore.”</p>
+            <p>That all changed though when she started attending Coleg Llandrillo for media studies, an opportunity she describes as a “second chance that changed my life.” During her time in college, Edwards says she connected with her teachers in a way she hadn’t before. She describes one lecturer, Chris, as her “role model” and says the relationship she had with him inspired her to pursue a career in education.</p>
+            <p>“I want to [be a teacher] because I know there are probably a few kids out there who think school isn’t for them and I want to teach them that, if maths and science isn’t your thing, you can do something else.”</p>
+            <p>Edwards recently received her postgraduate certificate in education, completing her trainee teaching program during the 2017-2018 schools year. She says many teachers have zero hour contracts – a type of contract where employers aren’t obliged to provide minimum working hours. Edwards says one of her friends from her PGCE program, who is a single mom, landed a teaching job upon graduation but is only getting four hours right now and struggling to make ends meet.</p>
+            <p>“The way education is now, it’s as if [employers] want it be like a hobby or something you do after your career. You can’t make a living off of the hours and wages,” said Edwards.</p>
+            <p>With these zero contract hours, teachers are only paid for the work they put in in the classroom so four hours of teaching means four hours of pay. According to Edwards, for a teacher to make the most of those four hours for the students, they’d have to put in around ten hours of lesson planning; ten hours which would be unpaid. Edwards feels these types of contracts and the stress they put on teachers impacts the students in the classroom and, because of the lack of funding, it’s leading to a shortage in educators.</p>
+            <p>Despite knowing that, she’s hopeful she can land a full-time job at a college, as that’s where she feels there’s the greatest need for dedicated teachers.</p>
+            <p>“I still really want to [teach]. I think I can make a difference so I’m going to try.”</p>
+          </div>
+        </div>
+
+
+      <div id='data' class="details">
+        <h2>Data and Methodology</h2>
+        <p>The data used in this investigation has two main sources: <a href="https://www.compare-school-performance.service.gov.uk/download-data"> the Department for Education</a> (DfE) when it comes to English schools and <a href="https://statswales.gov.wales/Catalogue/Local-Government/Finance/Revenue/Delegated-School-Budgets/delegatedschoolbudgets-by-school"> StatWales </a> for information about Wales. In both cases, the information was separated by school.</p>
+        <p>To measure the effects of austerity on spending per pupil per school in the two countries, the data was clustered in two periods: the 8 years of Austerity, starting with the first budget of David Cameron government (2010-2011) to the last Tory administration with available data (2017-2018).</p>
+        <p>The eight year period was compared to one timeframe with the same extension ending in 2009-2010 and starting in 2002-2003.</p>
+        <p>All values were adjusted by the inflation in the period according to the Office of National Statistics (ONS) of 58.48% (CPS).</p>
+        <p>An important methodology information regarding the spending per pupil by ethnicity is that masked data of the number of pupils of a specific ethnicity was replaced by 1 when required.</p>
+        <p>This happened because the DfE masks the number of pupils of a ethnicity in a school when there are only one or two of that ethnicity in the establishment. The same procedure was applied to Wales data.</p>
+      </div>
+    </div>
+
+
+    <div class="footer">
+      <a href="austerityTimeline.html" class="logo">Austerity Impact</a>
+      <div class="footer-left">
+        <a>The impact of austerity spending on school-aged children</a>
+      </div>
+    </div>
+
+    </div>
+  <script src="myScript.js"></script>
+</body>
